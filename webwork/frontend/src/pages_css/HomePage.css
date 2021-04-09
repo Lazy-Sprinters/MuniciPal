@@ -1,0 +1,57 @@
+.CountUp{
+    color:#2D7B90;
+    border:solid 0.1px #0161FF;
+    border-radius:4px;
+    background-color:#C0E1FA;
+    height:14vw;
+    width:20vw;
+    padding:0.1vw;
+    font-size:6vw;
+    transition: all 1s ease;
+}
+.CountSection{
+    border:solid 2px #0161FF;
+    border-radius:10px;
+    position:absolute;
+    top:50;
+    text-align:center;
+    margin-top:-7vw;
+    left:19vw;
+    display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+    transition: all 1s ease;
+}
+.Headings{
+    font-size:2vw;
+    transition: all 1s ease;
+}
+.ColoredSection1{
+    background-color:#5ACEB6;
+    height:45vh;
+    transition: all 1s ease;
+}
+.ColoredSection2{
+    background-color:#2D7B90;
+    height:45vh;
+    transition: all 1s ease;
+}
+.CountUp[animate='1'] {
+    height:5vw;
+    width:10vw;
+    font-size:2vw;
+}
+.CountSection[animate='1'] {
+    left:34vw;
+    top:10;
+    margin-top:-2.5vw;
+}
+.Headings[animate='1']{
+    font-size:1vw;
+}
+.ColoredSection1[animate='1']{
+    height:10vh;
+}
+.ColoredSection2[animate='1']{
+    height:10vh;
+}

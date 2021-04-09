@@ -1,0 +1,219 @@
+#frontend->backend req
+#backend->frontend ret
+
+/////////////send OTP
+req =>
+
+const municipalityCorp={
+	municipalityName:municipalityName,
+	areaOfJurisdiction:areaOfJurisdiction,
+	municipalityID:municipalityID,
+	securityKey:securityKey,
+	phoneNo:phoneNo,
+	email:email,
+	password:password
+}
+
+ret =>
+
+nothing
+
+////////////verfiy OTP
+req =>
+
+const CheckOTP ={
+	email:email,
+	emailOTP:emailOTP,
+	phone:phone,
+	phoneOTP:phoneOTP
+}
+
+ret =>
+
+nothing
+
+///////////Sign Up
+
+req=>
+
+const municipalityCorp={
+	municipalityName:municipalityName,
+	areaOfJurisdiction:areaOfJurisdiction,
+	municipalityID:municipalityID,
+	securityKey:securityKey,
+	phoneNo:phoneNo,
+	email:email,
+	password:password
+}
+
+ret =>
+
+nothing
+
+///////////Login
+
+req =>
+
+const user={
+	key:key,
+	password:password
+}
+
+ret =>
+
+full userInfo(including municipalityKey) with token that you will need to verify the APIs
+
+/////////////Count of Active,pending & resolved
+
+req =>
+
+Your need
+
+ret =>
+
+const count={
+	active:,
+	pending:,
+	resolved:
+}
+
+///////////Worker Info
+
+req =>
+
+Your need
+key
+
+ret =>
+
+const WorkForceData={
+        worker1:{
+            Image:"https://picsum.photos/200",
+            Name:"Devyn Kuhic I",
+            PhoneNo:1234567890,
+            Address:"Somewhere in NeverLand",
+	    id:firebaseidofobject
+        },
+        worker2:{
+            Image:"https://picsum.photos/200",
+            Name:"Halle Purdy PhD",
+            PhoneNo:1234567890,
+            Address:"Somewhere in NeverLand"
+        
+        },
+        worker3:{
+            Image:"https://picsum.photos/200",
+            Name:"Gwendolyn Bins",
+            PhoneNo:1234567890,
+            Address:"Somewhere in NeverLand"
+        
+        }
+};
+/////// add worker
+
+req =>
+const worker:{
+	Image:"https://picsum.photos/200",
+	Name:"Gwendolyn Bins",
+        PhoneNo:1234567890,
+        Address:"Somewhere in NeverLand",
+	key:key
+}
+
+ret =>
+
+nothing
+
+/////// delete worker
+
+req =>
+const worker:{
+	Image:"https://picsum.photos/200",
+	Name:"Gwendolyn Bins",
+        PhoneNo:1234567890,
+        Address:"Somewhere in NeverLand"
+}
+
+ret =>
+
+nothing
+
+/////// for each active,pending and resolved
+
+req =>municipalityid
+
+Your need
+
+ret =>
+
+const complaintsData={
+        complaint1:
+        {
+            OwnerPhoneNo:"phone tou gadhe mein gir gya ab kya karun?",
+            ComplaintNo:"235214",
+            ComplaintTitle:"Gaddhe Hai Har Jagah",
+            Address:"Khud Dekh Lo har jagah gaddhe hain",
+            Before:[],
+            After:[],
+            WorkerWhoFixed:{
+                PhoneNo:"123456789",
+                Name:"a"
+            },
+            ComplaintDate:"September 14, 2016"
+        },
+	complaint2:
+        {
+            OwnerPhoneNo:"phone tou gadhe mein gir gya ab kya karun?",
+            ComplaintNo:"235214",
+            ComplaintTitle:"Gaddhe Hai Har Jagah",
+            Address:"Khud Dekh Lo har jagah gaddhe hain",
+            Before:[],
+            After:[],
+            WorkerWhoFixed:{
+                PhoneNo:"123456789",
+                Name:"a"
+            },
+            ComplaintDate:"September 14, 2016"
+        },
+	complaint3:
+        {
+            OwnerPhoneNo:"phone tou gadhe mein gir gya ab kya karun?",
+            ComplaintNo:"235214",
+            ComplaintTitle:"Gaddhe Hai Har Jagah",
+            Address:"Khud Dekh Lo har jagah gaddhe hain",
+            Before:[],
+            After:[],
+            WorkerWhoFixed:{
+                PhoneNo:"123456789",
+                Name:"a"
+            },
+            ComplaintDate:"September 14, 2016"
+        },
+}
+
+/////// reject complaint
+
+req =>
+
+const req={
+req.body.complaint
+req.body.reason
+	complaint:{
+		OwnerPhoneNo:"phone tou gadhe mein gir gya ab kya karun?",
+            	ComplaintNo:"235214",
+            	ComplaintTitle:"Gaddhe Hai Har Jagah",
+            	Address:"Khud Dekh Lo har jagah gaddhe hain",
+            	Before:[],
+            	After:[],
+           	WorkerWhoFixed:{
+            	    PhoneNo:"123456789",
+                	Name:"a"
+            	},
+            	ComplaintDate:"September 14, 2016"
+	}
+	reason:reason(string)
+}
+
+ret=>
+
+nothing

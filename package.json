@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Official repository of team Lazy Sprinters",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anuraj0124/Hackulus-MuniciPal.git"
+  },
+  "author": "Lazy Sprinters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anuraj0124/Hackulus-MuniciPal/issues"
+  },
+  "homepage": "https://github.com/Anuraj0124/Hackulus-MuniciPal#readme"
+}

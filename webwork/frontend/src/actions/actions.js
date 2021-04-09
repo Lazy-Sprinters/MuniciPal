@@ -1,0 +1,4 @@
+export const CHANGE_USER = 'CHANGE_USER';
+export const CHANGE_ACTIVE = 'CHANGE_ACTIVE';
+export const CHANGE_PENDING = 'CHANGE_PENDING';
+export const CHANGE_RESOLVED = 'CHANGE_RESOLVED';

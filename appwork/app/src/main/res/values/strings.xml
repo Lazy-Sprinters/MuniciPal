@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name"><font fgcolor='#2D7B90'>MuniciPal</font></string>
+    <string name="enter_name">Name</string>
+    <string name="sign_up">Sign Up</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "136830515704",
+    "project_id": "municipal-d0e42",
+    "storage_bucket": "municipal-d0e42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136830515704:android:ad5315b7ea1b6c4f277e0d",
+        "android_client_info": {
+          "package_name": "com.goyal.municiPal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136830515704-odk3fv5m5fvrii6367iq3q9c6qrmbl78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD02p3qysJUj6NYOmJsMtNSp6dnMrs10IM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136830515704-odk3fv5m5fvrii6367iq3q9c6qrmbl78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

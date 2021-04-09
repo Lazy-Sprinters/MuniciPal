@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family:"Segoe UI", Semibold;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	width:100vw;
+}
+.row1{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+}
