@@ -22,6 +22,9 @@ class LoginActivity : AppCompatActivity() {
         input1=findViewById(R.id.phnofieldlogin)
         loginbut.isEnabled=false
         input1.addTextChangedListener(textWatcher)
+        clearinplogin.setOnClickListener {
+            input1.setText("")
+        }
         loginbut.setOnClickListener {
             var ref=db.collection("Users").document(phnofieldlogin.text.toString())
             ref.get().addOnSuccessListener {
