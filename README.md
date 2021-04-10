@@ -1,8 +1,30 @@
+<div align="center">
+
+<img src="./webwork/frontend/public/images/Logo.png" />
+
+<br />
+<br />
+
+# MuniciPal - Pal that cares for you !
+
+</div>
+
+<br />
+
 # Hackulus-MuniciPal
 
  This is the official repository for team-Lazy Sprinters
  
- 
+ # Problem Statement
+
+How often have you walked past a street in your locality and saw a pile of garbage that has been there for weeks? How often is it when you're driving and you encounter a pothole so deep it can lead to serious accidents? Or how about the sore sight that open drains provide apart from the health hazards?
+
+Most of the times these things in your locality don't get noticed by the bodies of the system, the municipalities. Sometimes an RTI or sometimes a complaint letter needs to be sent to the Municipal Corporations to get these things sorted and in order. And we all know the time it takes for some action to be taken. So is this problem solvable?
+
+
+# Proposed Solution
+
+Bridge the ultra-wide gap between municipalities and citizens of a particular area/locality/city. Bring transparency by providing the end-users visual references of the resolved complaint. Our product will enable the users to register hassle-free complaints using the app instead of the old school method of paperwork or registration of complaints at the municipality offices.
  
 # Tech Stack Used
 
@@ -24,12 +46,10 @@
  ## Video: 
  
 
- 
  ## Presentation: 
+  ### https://docs.google.com/presentation/d/1QIlvn1bw6Pa_NT4z6v7dUa6pWu0S5wR58thzbEzapVM/edit?usp=sharing
 
-
-
-# FRONTEND
+#FRONTEND
 
 ## Getting Started with Create React App
 
@@ -75,16 +95,15 @@ Create a .env file in the backend-root directory on your local machine with the 
 TEST_MAIL=(Mail ID for sending the cancellation messages and verifications emails)<br>
 TEST_PASS=(Password of the mail ID)<br>
 API_KEY=(API KEY for the HERE Platform)<br>
-SECRET=(Secret for the vonage API service)<br>
-VKEY=(Key for the vonage API service)<br>
-SERVICE=(Service of the mail ID as in hotmail,yahoo,gmail etc)<br>
+SECRET=(Secret for the Vonage API service)<br>
+VKEY=(Key for the Vonage API service)<br>
+SERVICE=(Service of the mail ID as in Hotmail,Yahoo,Gmail etc)<br>
 AUTHSRT=(Token for the authentication service)<br>
 
 ### Setting Firebase
 
-Create a firbase account and download SDKs for wep and application.\
-Follow all the instructions to set up firbase database step by step
-
+Create a firebase account and download SDKs for web and application.\
+Follow all the instructions to set up the firebase database step by step
 
 # APP (Android)
 
@@ -92,4 +111,5 @@ Follow all the instructions to set up firbase database step by step
 ### https://drive.google.com/file/d/1iqjug-dG6cgiR4LuMHvTwGD9rcOmxsXt/view?usp=sharing
 
 ## Process
-Just install the apk and run it on your android phone.
+Just install the APK and run it on your android phone.
+When asked for OTP on SignUp **OTP={123456}**
