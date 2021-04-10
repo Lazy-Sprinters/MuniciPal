@@ -5,7 +5,7 @@
 <br />
 <br />
 
-# MuniciPal - Pal that cares for you !
+# MuniciPal - You Have A Voice !
 
 </div>
 
