@@ -41,15 +41,17 @@ Bridge the ultra-wide gap between municipalities and citizens of a particular ar
      Reactjs
      Nodejs 
      
+     
 # Implementation:
  
  ## Video: 
- 
+  ### https://youtu.be/zedrvDYhqfM
 
  ## Presentation: 
   ### https://docs.google.com/presentation/d/1QIlvn1bw6Pa_NT4z6v7dUa6pWu0S5wR58thzbEzapVM/edit?usp=sharing
+  
 
-#FRONTEND
+# FRONTEND
 
 ## Getting Started with Create React App
 
@@ -111,5 +113,5 @@ Follow all the instructions to set up the firebase database step by step
 ### https://drive.google.com/file/d/1iqjug-dG6cgiR4LuMHvTwGD9rcOmxsXt/view?usp=sharing
 
 ## Process
-Just install the APK and run it on your android phone.
-When asked for OTP on SignUp **OTP={123456}**
+Just install the APK and run it on your android phone.\
+When asked for OTP on SignUp use **OTP={123456}**
