@@ -3,6 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const muniRouter=require('./src/routers/municipality')
 const workRouter=require('./src/routers/worker')
+const compRouter=require('./src/routers/complaint')
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(cors()); //Cross Origin Resource Sharing
 
 app.use('/user',muniRouter)
 app.use('/worker',workRouter)
+app.use('/complaint',compRouter)
 // app.use('/user/worker',muniRouter)
 
 //List of all endpoints

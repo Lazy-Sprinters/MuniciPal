@@ -12,79 +12,22 @@ import { useDispatch , useSelector } from 'react-redux';
 
 export default function HomePage(){
     const [initial,setInitial] = React.useState(true);  // API Call to get the numbers 
-    const [active,setActive] = React.useState(23130);  // API Call to get the numbers 
-    const [pending,setPending] = React.useState(3022);
-    const [resolved,setResolved] = React.useState(20108);
-    const [WorkForce,setWorkForce] = React.useState(20108);
+    const [active,setActive] = React.useState(0);  // API Call to get the numbers 
+    const [pending,setPending] = React.useState(0);
+    const [resolved,setResolved] = React.useState(0);
+    const [WorkForce,setWorkForce] = React.useState("");
     const [animate,setAnimate]=React.useState(0);
     const [appear,setAppear]=React.useState(false);
     const [workerSelected,setWorkerSelected]=React.useState(false);
     const [workerDetails,setWorkerDetails]=React.useState({});
     const dispatch = useDispatch();
     const user = useSelector(state => state.user);
-    const active1 = useSelector(state => state.active);
-    const pending1 = useSelector(state => state.pending);
-    const resolved1 = useSelector(state => state.resolved);
+    // const active1 = useSelector(state => state.active);
+    // const pending1 = useSelector(state => state.pending);
+    // const resolved1 = useSelector(state => state.resolved);
 
     
-    const [WorkForceData,setWorkForceData]= React.useState("")
-    // ({
-    //     worker1:{
-    //         Image:"https://picsum.photos/200",
-    //         Name:"Devyn Kuhic I",
-    //         PhoneNo:1234567890,
-    //         Address:"Somewhere in NeverLand"
-    //     },
-    //     worker2:{
-    //         Image:"https://picsum.photos/200",
-    //         Name:"Halle Purdy PhD",
-    //         PhoneNo:1234567890,
-    //         Address:"Somewhere in NeverLand"
-        
-    //     },
-    //     worker3:{
-    //         Image:"https://picsum.photos/200",
-    //         Name:"Gwendolyn Bins",
-    //         PhoneNo:1234567890,
-    //         Address:"Somewhere in NeverLand"
-        
-    //     },
-    //     worker4:{
-    //         Image:"https://picsum.photos/200",
-    //         Name:"Napoleon Becler",
-    //         PhoneNo:1234567890,
-    //         Address:"Somewhere in NeverLand"
-        
-    //     },
-    //     worker5:{
-    //         Image:"https://picsum.photos/200",
-    //         Name:"Dennis Hahn III",
-    //         PhoneNo:1234567890,
-    //         Address:"Somewhere in NeverLand"
-        
-    //     },
-    //     worker6:{
-    //         Image:"https://picsum.photos/200",
-    //         Name:"Keaton Daugher",
-    //         PhoneNo:1234567890,
-    //         Address:"Somewhere in NeverLand"
-        
-    //     },
-    //     worker7:{
-    //         Image:"https://picsum.photos/200",
-    //         Name:"Verlie Smith",
-    //         PhoneNo:1234567890,
-    //         Address:"Somewhere in NeverLand"
-        
-    //     },
-    //     worker8:{
-    //         Image:"https://picsum.photos/200",
-    //         Name:"Napoleon Becler",
-    //         PhoneNo:1234567890,
-    //         Address:"Somewhere in NeverLand"
-        
-    //     }
-    // });
+    const [WorkForceData,setWorkForceData]= React.useState("");
     const selectWorker = (worker) =>{
         const currentWorker={Name:worker.Name,Image:worker.Image,PhoneNo:worker.PhoneNo,Address:worker.Address,id:worker.id}
         setWorkerDetails(currentWorker);
@@ -216,6 +159,7 @@ export default function HomePage(){
                 setActive(res.data.response.active);
                 setPending(res.data.response.pending);
                 setResolved(res.data.response.resolved);
+                console.log(active,pending,resolved)
             }
             else{
                 console.log(res.data.message)
@@ -227,9 +171,9 @@ export default function HomePage(){
     };
     useEffect (
         ()=>{
-            setActive(active1);
-            setPending(pending1);
-            setResolved(resolved1);
+            // setActive(active1);
+            // setPending(pending1);
+            // setResolved(resolved1);
             initial && getCount();
         }
     )

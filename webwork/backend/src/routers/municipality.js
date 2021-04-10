@@ -237,7 +237,7 @@ router.post("/count", async (req, res) => {
     console.log(key);
     const allcomplaints = await db
       .collection("Complaints")
-      .where("muni_key", "==", key)
+      .where("key_mun", "==", key)
       .get();
     let active = 0;
     let pending = 0;
@@ -257,6 +257,7 @@ router.post("/count", async (req, res) => {
     } else {
           console.log(allcomplaints.size);
       allcomplaints.forEach((ele) => {
+        console.log(ele.data());
         if (ele.data().Active == true) {
           active += 1;
         } else if (ele.data().Pending == true) {
@@ -265,11 +266,13 @@ router.post("/count", async (req, res) => {
           resolved += 1;
         }
       });
+      console.log(active,pending);
       const ret = {
         active: active,
         pending: pending,
         resolved: resolved,
       };
+      console.log(ret);
       res.send({
         success: true,
         code: 200,
