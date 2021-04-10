@@ -89,7 +89,7 @@ Follow all the instructions to set up firbase database step by step
 # APP (Android)
 
 ## Link to APK
-###
+### https://drive.google.com/file/d/1iqjug-dG6cgiR4LuMHvTwGD9rcOmxsXt/view?usp=sharing
 
 ## Process
-Just install the apk and run it on you android phone.
+Just install the apk and run it on your android phone.
