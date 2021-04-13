@@ -1,7 +1,7 @@
 const admin=require('firebase-admin');
 const path=require('path');
 
-const serviceAccount=require(path.resolve(__dirname,'./municipal-d0e42-firebase-adminsdk-ymbia-4ddf48747e.json'));
+const serviceAccount=require(path.resolve(__dirname,/*YOUR FIREBASE SERVICE ACCOUNT CREDENTIAL FILE*/));
 
 admin.initializeApp({
       credential:admin.credential.cert(serviceAccount)
