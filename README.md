@@ -114,4 +114,4 @@ Follow all the instructions to set up the firebase database step by step
 
 ## Process
 Just install the APK and run it on your android phone.\
-When asked for OTP on SignUp use **OTP={123456}**
+When asked for OTP on SignUp use **OTP=123456**
